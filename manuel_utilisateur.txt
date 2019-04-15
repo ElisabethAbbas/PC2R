@@ -1,0 +1,13 @@
+exécution client : java -jar Client.jar hôte num_port
+exécution serveur : ./serv.exe num_port nb_sock
+
+compilation serveur : ocamlc -g -o serv.exe -thread -custom str.cma unix.cma threads.cma serveur.ml -cclib -lthreads -cclib -lunix
+
+compilation client : projet Eclipse
+
+Comment jouer?
+Lancer le serveur.
+Pendant la phase d'attente, connecter les joueurs (lancer les commandes java).
+flèche vers le haut : avancer.
+droite/gauche : tourner. 
+Le but est d'atteindre l'objectif.
